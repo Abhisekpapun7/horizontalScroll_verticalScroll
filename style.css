@@ -81,15 +81,10 @@ body {
 
 @media (max-width: 480px) {
     .gallery {
-        width: 300px;
+        width: 400px;
     }
 }
 
-@media (max-width: 375px) {
-    .gallery {
-        width: 300px;
-    }
-}
 
 .vertical-gallery {
     width: 250px;
