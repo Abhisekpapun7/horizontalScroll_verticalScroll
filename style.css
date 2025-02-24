@@ -29,10 +29,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-#backBtn:hover, #nextBtn:hover {
-    transform: scale(1.2);
-}
-
 .gallery {
     width: 900px;
     display: flex;
