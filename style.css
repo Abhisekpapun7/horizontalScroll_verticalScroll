@@ -85,6 +85,12 @@ body {
     }
 }
 
+@media (max-width: 375px) {
+    .gallery {
+        width: 350px;
+    }
+}
+
 
 .vertical-gallery {
     width: 250px;
