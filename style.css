@@ -19,8 +19,6 @@ body {
     align-items: center;
     justify-content: center;
     margin: 20px auto;
-    max-width: 100%;
-    overflow: hidden;
 }
 
 #backBtn, #nextBtn {
@@ -35,10 +33,9 @@ body {
 }
 
 .gallery {
-    width: 100%;
-    max-width: 900px;
+    width: 900px;
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
 }
@@ -49,7 +46,7 @@ body {
 
 .gallery div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(6, auto);
     grid-gap: 20px;
     padding: 10px;
     flex: none;
@@ -68,6 +65,30 @@ body {
     filter: grayscale(0);
     cursor: pointer;
     transform: scale(1.08);
+}
+
+@media (max-width: 1024px) {
+    .gallery {
+        width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        width: 300px;
+    }
+}
+
+@media (max-width: 375px) {
+    .gallery {
+        width: 250px;
+    }
 }
 
 .vertical-gallery {
