@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 30cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+#backBtn, #nextBtn {
+    width: 40px;
+    cursor: pointer;
+    margin: 40px;
+    transition: transform 0.3s ease;
+}
+
+#backBtn:hover, #nextBtn:hover {
+    transform: scale(1.2);
+}
+
+.gallery {
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery div {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.gallery div img {
+    filter: grayscale(100%);
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery div img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+.vertical-gallery {
+    width: 250px;
+    height: 350px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    margin-top: 40px;
+}
+
+.vertical-gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.vertical-gallery div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.vertical-gallery div img {
+    filter: grayscale(100%);
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-gallery div img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+h1 {
+    color: rgb(102, 255, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(4, 0, 255);
+    inline-size: 100%;
+    text-align: center;
+    padding: 4px;
+}
