@@ -79,7 +79,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 412px) {
     .gallery {
         width: 300px;
     }
